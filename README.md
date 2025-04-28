@@ -58,7 +58,7 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [Important Notes](#important-notes)
-- [TODO](#todo)
+- [Training](#training)
 - [Acknowledgement](#acknowledgement)
 - [Star History](#star-history)
 - [BibTeX](#bibtex)
@@ -117,11 +117,9 @@ python main.py --input_path pc_examples/mouse.npy --out_dir pc_output --input_ty
 - The input mesh will be normalized to a unit bounding box. The up vector of the input mesh should be +Y for better results.
 - Limited by computational resources, MeshAnything is trained on meshes with fewer than 800 faces and cannot generate meshes with more than 800 faces. The shape of the input mesh should be sharp enough; otherwise, it will be challenging to represent it with only 800 faces. Thus, feed-forward 3D generation methods may often produce bad results due to insufficient shape quality. We suggest using results from 3D reconstruction, scanning and SDS-based method (like [DreamCraft3D](https://github.com/deepseek-ai/DreamCraft3D)) as the input of MeshAnything.
 - Please refer to https://huggingface.co/spaces/Yiwen-ntu/MeshAnything/tree/main/examples for more examples.
-## TODO
 
-The repo is still being under construction, thanks for your patience. 
-- [ ] Release of training code.
-- [ ] Release of larger model.
+## Training
+Please refer to the training code of MeshAnythingV2 at https://github.com/buaacyw/MeshAnythingV2.
 
 ## Acknowledgement
 
